@@ -1,12 +1,9 @@
-'''
-620031587
-Net-Centric Computing Assignment
-Part A - RSA Encryption
-'''
-
+"""
+Joseph Mutiga Kirega
+P15/1567/2015
+Cryptography- Assingment 2 
+"""
 import random
-
-
 '''
 Euclid's algorithm for determining the greatest common divisor
 Use iteration to make it faster for larger integers
@@ -70,7 +67,7 @@ def generate_keypair(p, q):
     #Choose an integer e such that e and phi(n) are coprime
     e = random.randrange(1, phi)
 
-    #Use Euclid's Algorithm to verify that e and phi(n) are comprime
+    #Use Euclid's Algorithm to verify that e and phi(n) are coprime
     g = gcd(e, phi)
     while g != 1:
         e = random.randrange(1, phi)
